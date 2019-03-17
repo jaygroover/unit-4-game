@@ -4,7 +4,7 @@
     background-color:white;
     opacity: 0.6;
     font-family:'lobster',cursive,'sans-serif';
-    color:brown;
+    color:black;
 }
 
 .randomNumber{
@@ -38,7 +38,7 @@
 }
 
 .wallpaper{
-    background-image:url(../images/amethystcrystal.jpg);
+    background-image:url(../images/thanos.jpg);
     background-size: cover;
 }
 
