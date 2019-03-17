@@ -15,6 +15,9 @@ $(document).ready(function() {
 	// 	randomArray.push(gemNumber); 
 	// }
 
+	
+	
+	
 	var gemOne = Math.floor(Math.random() * 12) + 1; 
 		console.log("Gem 1: " + gemOne); 
 		$("#img1").html("<img src=" + "assets/images/image1.png" + " value=" + gemOne + ">"); 
@@ -31,16 +34,24 @@ $(document).ready(function() {
 		console.log("Gem 4: " + gemFour); 
 		$("#img4").html("<img src=" + "assets/images/image4.png" + " value=" + gemFour + ">");
 		
-	var wins = 0; 
-		console.log("wins: " + wins); 
+	
+	
+	
+	
+	var wins = 0;
+		console.log("wins: " + wins);
 
-	var losses = 0; 
-		console.log("losses: " + losses); 
+	var losses = 0;
+		console.log("losses: " + losses);
 
-	var score = 0; 
-		console.log("score: " + score); 
+	var score = 0;
+		console.log("score: " + score);
 
-	function reset () {
+	
+	
+	
+	
+		function reset () {
 		compPick = Math.floor(Math.random() * 102) + 19; 
 			console.log("compPick: " + compPick); 
 		$(".randomNumber").html(compPick); 
@@ -69,20 +80,27 @@ $(document).ready(function() {
 				console.log("New Score: " + newScore); 
 			$(".scoreDisplay").html(newScore); 
 
-			if(newScore === compPick) { 
-				wins++ ; 
-				$(".wins").html("Wins: " + wins); 
-					console.log("Wins: " + wins); 
-					reset(); 
 			
-			} 
+			
+			
+			
+			
+			if(newScore === compPick) {
+				wins++ ;
+				$(".wins").html("Wins: " + wins);
+				console.log("Wins: " + wins);
+				reset();
 
-			else if(newScore > compPick) {
-				losses++ ; 
-				$(".losses").html("Losses: " + losses); 
-					console.log("Losses: " + losses); 
-					reset(); 
-				
+			}
+
+			else if (newScore > compPick) {
+				losses++ ;
+				$(".losses").html("Losses: " + losses);
+				console.log("Losses: " + losses);
+				reset();
+
+
+
 			}
 
 		}); 
@@ -96,23 +114,38 @@ $(document).ready(function() {
 			console.log("New Score: " + newScore); 
 		$(".scoreDisplay").html(newScore); 
 
-		if(newScore === compPick) { 
-			wins++ ; 
-			$(".wins").html("Wins: " + wins); 
-				console.log("Wins: " + wins); 
-				reset(); 
-		} 
+		
+		
+		
+		
+		
+		if(newScore === compPick) {
+			wins ++ ;
+			$(".wins").html("Wins: " + wins);
+			console.log("Wins: " + wins);
+			reset();
 
-		else if(newScore > compPick) {
-			losses++ ; 
-			$(".losses").html("Losses: " + losses); 
-				console.log("Losses: " + losses); 
-				reset(); 
+
 		}
 
-	}); 
+		else if(newScore > compPick) {
+			losses ++ ;
+			$(".losses").html("Losses: " + losses);
+			console.log("Losses: " + losses);
+			reset();
 
+
+		}
+
+
+
+	});
+
+	
 }); 
+
+
+
     
  
 
