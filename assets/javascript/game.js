@@ -1,21 +1,15 @@
 $(document).ready(function() {
 
 
+	$("#end_container").hide();
+
+
 
 	var compPick = Math.floor(Math.random() * 102) + 19; 
 		console.log("compPick: " + compPick); 
 		$(".randomNumber").html(compPick); 
 
-	// var randomArray = []; 
-	// 	console.log("randomArray: " + randomArray); 
-
-	// for (i = 0 ; i < 4 ; i++) {
-	// 	var gemNumber = Math.floor(Math.random() * 12) + 1; 
-	// 		console.log("gemNumber: " + gemNumber); 
-	// 	randomArray.push(gemNumber); 
-	// }
-
-	
+		
 	
 	
 	var gemOne = Math.floor(Math.random() * 12) + 1; 
@@ -47,8 +41,12 @@ $(document).ready(function() {
 	var score = 0;
 		console.log("score: " + score);
 
+
 	
-	
+
+
+
+			
 	
 	
 		function reset () {
@@ -103,6 +101,10 @@ $(document).ready(function() {
 
 			}
 
+
+
+			
+
 		}); 
 
 
@@ -137,11 +139,46 @@ $(document).ready(function() {
 
 		}
 
+		if(losses > wins) {
+			$("#end_container").show();
+
+
+		}else if(wins > losses){
+
+		$(".wallpaper").css("background-image","url(assets/images/avengers.jpg)");
+
+		}
+
+		
+
 
 
 	});
 
 	
+
+
+//Time stone restarts the game..........
+	function restart (){
+		$('.button').click(function() {
+			location.reload();
+		});
+
+		
+
+
+
+
+	};
+	
+	
+	restart();
+
+
+
+
+
+
 }); 
 
 

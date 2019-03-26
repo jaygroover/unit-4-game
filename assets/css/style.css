@@ -54,3 +54,25 @@
     color:black;
     background-color: white;
 }
+
+
+button{
+position: relative;
+left: -1%;
+top:20%;
+
+
+
+}
+
+#end_container{
+position: relative;
+top: -831px;
+bottom: 100px;
+opacity: 1;
+width:100%;
+background-color:white;
+color: black;  
+
+
+}
